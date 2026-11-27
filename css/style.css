@@ -1,0 +1,1149 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-image: url(../img/NISSAN_SKYLINE.jpg);
+    background-attachment: fixed;
+}
+
+/*-----NAVIGATION BAR-----*/
+.navBar {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+    /*display: none;*/
+}
+
+/*-----SKYLINE-----*/
+.name {
+    margin-right: auto; /* pushes navigation to the right */
+}
+
+.name h2 {
+    color: #0b005b;
+    margin: 0;
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*-----NAVIGATION LINKS-----*/
+.navText ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+}
+
+.navText a {
+    text-decoration: none;
+    color: rgb(0, 0, 74);
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navText a:hover {
+    color: gray;
+    border-radius: 5px;
+    transform: scale(1.05);
+}
+
+/*-----HORIZONTAL CONTENT-----*/
+.LayoutH {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.leftContent {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0px 50px 100px 75px;
+    padding: 0;
+    width: 32%;
+    min-height: 615px;
+    
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#titleHome {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    margin: 70px 30px 50px 30px;
+}
+
+.description {
+    color: white;
+    opacity: 1.00;
+    margin: 30px;
+    margin-left: 30px;
+    text-align: justify;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+#explore-btn {
+    margin: 150px auto 0 auto;
+    text-align: center;
+}
+
+#explore-btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid white;
+    width: 150px;
+    color: white;
+    text-decoration: none;
+}
+
+#explore-btn a:hover {
+    background-color: #0b005b;
+    color: white;
+}
+
+
+/*-----VERTICAL CONTENT-----*/
+.LayoutV {
+    padding: 0;
+    margin: 0 auto;
+    width: 90%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*-----FEATURES TITLE-----*/
+.topContent {
+    min-height: 70px;
+    background-color: rgba(10, 0, 82, 0.8);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titleHistory {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+/*-----HISTORY-----*/
+#History {
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
+.bottomContent {
+    padding: 30px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.92);
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid gray;
+}
+
+.bottomContent p {
+    color: black;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+/*-----CAR SECTION-----*/
+.nissanCar {
+    display: flex;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.90);
+}
+
+.nissanLeft, .nissanRight {
+    width: 50%;
+    height: 450px;
+}
+
+.nissanLeft {
+    background-image: url(../img/NISSAN_GTR.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.nissanRight {
+    background-color: white;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#nissanTitle {
+    margin-top: 70px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+#nissanDescription {
+    margin: 50px 50px 0px 50px;
+    text-align: justify;
+}
+
+/*-----FEATURES LAYOUT SECTION-----*/
+#Features {
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
+.featuresH {
+    padding: 0;
+    margin: 0 auto;
+    width: 90%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.90);
+}
+
+/*-----FEATURES TITLE-----*/
+.topFeatures {
+    min-height: 70px;
+    background-color: #0b005b;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titleFeatures {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+
+/*-----FEATURE CARDS-----*/
+.featureCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+}
+
+
+/*-----INDIVIDUAL CARD-----*/
+.featureCard {
+    display: flex;
+    width: 45%;
+    min-height: 220px;
+    background-color: #f5f5f5;
+    border: 2px solid #0b005b;
+    box-sizing: border-box;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.featureCard:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(5, 0, 46, 0.2);
+}
+
+
+/*-----FEATURE IMAGE-----*/
+.featureImage {
+    width: 45%;
+    min-height: 180px;
+}
+
+.featureImage img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+
+/*-----FEATURE INFORMATION-----*/
+.featureInfo {
+    width: 55%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.featureTitle {
+    color: #0b005b;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.featureDescription {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* -------------SPECS---------------- */
+.specs {
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 70px 50px;
+    box-sizing: border-box;
+    background-color: rgba(248, 248, 248, 0.92);
+}
+
+/* TITLE */
+
+.specsTitle {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.specsTitle h1 {
+    font-size: 40px;
+    color: #05002e;
+    margin-bottom: 8px;
+}
+
+.specsTitle p {
+    font-size: 17px;
+    color: #555;
+}
+
+
+/* MAIN CONTENT */
+
+.specsContent {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* CAR IMAGE */
+
+.specsImage {
+    width: 520px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.specsImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* SPECIFICATIONS */
+
+.specsTable {
+    width: 420px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+
+/* EACH ROW */
+.specRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.specRow:last-child {
+    border-bottom: none;
+}
+
+.specRow h3 {
+    font-size: 14px;
+    color: #05002e;
+    margin: 0;
+}
+
+.specRow p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+
+/* --------PERFORMANCE---------- */
+.performance {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.performance h2 {
+    font-size: 28px;
+    color: #05002e;
+    margin-bottom: 25px;
+}
+
+.performanceContainer {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.performanceBox {
+    width: 210px;
+    padding: 20px;
+    background-color: #05002e;
+    color: white;
+}
+
+.performanceBox h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.performanceBox p {
+    font-size: 15px;
+    margin: 0;
+}
+
+
+/* -------------GALLERY---------------- */
+.gallery {
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 70px 50px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.92);
+}
+
+/* GALLERY TITLE */
+.galleryTitle {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.galleryTitle h1 {
+    font-size: 40px;
+    color: #05002e;
+    margin-bottom: 8px;
+}
+
+.galleryTitle p {
+    font-size: 17px;
+    color: #555;
+}
+
+
+/* GALLERY CONTAINER */
+.galleryContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* GALLERY CARD */
+.galleryCard {
+    background-color: white;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.galleryCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(5, 0, 46, 0.2);
+}
+
+
+/* IMAGE */
+.galleryCard img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* INFORMATION */
+
+.galleryInfo {
+    padding: 20px;
+}
+
+.galleryInfo h3 {
+    color: #05002e;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.galleryInfo p {
+    color: #555;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* -------------CONTACT / FOOTER---------------- */
+.contact {
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 50px 30px 50px;
+    box-sizing: border-box;
+    background-color: #05002e;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* CONTACT COLUMNS */
+.contactColumn {
+    flex: 1;
+    text-align: center;
+}
+
+.contactColumn h3 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+}
+
+.contactColumn a {
+    display: block;
+    color: #d5d5d5;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.contactColumn a:hover {
+    color: #bdb7ff;
+}
+
+.contactColumn p {
+    color: #d5d5d5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin: 0 0 25px 0;
+    cursor: default;
+    transition: 0.3s;
+}
+
+.contactColumn p:hover {
+    color: #bdb7ff;
+}
+
+/* BOTTOM */
+
+.contactBottom {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    margin-top: 30px;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.contactBottom p {
+    color: #bdbdbd;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   Desktop, tablet, and mobile
+========================================= */
+
+/* Prevent unwanted horizontal scrolling */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Keep section links visible below the fixed navbar */
+#Home,
+#History,
+#Features,
+#Specifications,
+#Gallery,
+#Contact {
+    scroll-margin-top: 90px;
+}
+
+/* =========================================
+   TABLETS AND SMALL LAPTOPS
+========================================= */
+
+@media screen and (max-width: 1024px) {
+
+    /* Navigation */
+    .navBar {
+        padding: 0 20px;
+    }
+
+    .navText ul {
+        gap: 0;
+    }
+
+    .navText a {
+        padding: 10px 7px;
+        font-size: 13px;
+    }
+
+    /* Home */
+    .leftContent {
+        width: 45%;
+        margin: 0 0 60px 35px;
+        min-height: 550px;
+    }
+
+    #titleHome {
+        font-size: 40px;
+        margin: 55px 25px 35px;
+    }
+
+    #explore-btn {
+        margin-top: 90px;
+    }
+
+    /* History car section */
+    .nissanLeft,
+    .nissanRight {
+        width: 50%;
+        height: auto;
+        min-height: 400px;
+    }
+
+    .nissanRight {
+        padding: 35px 25px;
+    }
+
+    #nissanTitle {
+        margin-top: 40px;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    #nissanDescription {
+        margin: 30px 0 0;
+        line-height: 1.7;
+    }
+
+    /* Feature cards */
+    .featureCards {
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .featureCard {
+        width: calc(50% - 10px);
+        padding: 15px;
+    }
+
+    .featureImage {
+        width: 40%;
+        flex-shrink: 0;
+    }
+
+    .featureInfo {
+        width: 60%;
+        padding: 5px 12px;
+    }
+
+    .featureTitle {
+        font-size: 20px;
+    }
+
+    /* Specifications */
+    .specs,
+    .gallery {
+        padding: 55px 30px;
+    }
+
+    .specsContent {
+        gap: 25px;
+    }
+
+    .specsImage,
+    .specsTable {
+        width: calc(50% - 13px);
+        min-width: 0;
+    }
+
+    .specsImage {
+        height: auto;
+        min-height: 300px;
+    }
+
+    .specRow {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .specRow h3,
+    .specRow p {
+        font-size: 12px;
+    }
+
+    .performanceContainer {
+        flex-wrap: wrap;
+    }
+
+    /* Gallery */
+    .galleryContainer {
+        gap: 20px;
+    }
+
+    .galleryCard img {
+        height: 190px;
+    }
+
+    /* Footer */
+    .contact {
+        padding: 55px 25px 25px;
+        gap: 25px;
+    }
+}
+
+/* =========================================
+   PHONES AND SMALL TABLETS
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    /* Background */
+    body {
+        background-attachment: scroll;
+        background-position: center;
+    }
+
+    /* Navigation */
+    .navBar {
+        height: auto;
+        min-height: 80px;
+        padding: 10px 12px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .name {
+        margin: 0;
+    }
+
+    .name h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .navText {
+        width: 100%;
+    }
+
+    .navText ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .navText a {
+        font-size: 11px;
+        padding: 7px 8px;
+    }
+
+    .navText a:hover {
+        transform: none;
+    }
+
+    /* Home section */
+    .LayoutH {
+        min-height: auto;
+        padding-top: 120px;
+        padding-bottom: 40px;
+    }
+
+    .leftContent {
+        width: calc(100% - 36px);
+        min-height: auto;
+        margin: 20px 18px 30px;
+        padding: 25px 20px 35px;
+    }
+
+    #titleHome {
+        font-size: clamp(30px, 7vw, 42px);
+        line-height: 1.2;
+        margin: 15px 0 25px;
+    }
+
+    .description {
+        margin: 18px 0;
+        line-height: 1.7;
+        font-size: 14px;
+    }
+
+    #explore-btn {
+        margin: 35px auto 0;
+    }
+
+    #explore-btn a {
+        width: auto;
+        min-width: 150px;
+        text-align: center;
+    }
+
+    /* History */
+    .LayoutV,
+    .featuresH,
+    .specs,
+    .gallery {
+        width: 100%;
+    }
+
+    .LayoutV {
+        min-height: auto;
+    }
+
+    #History,
+    #Features {
+        padding-top: 120px;
+        margin-top: -120px;
+    }
+
+    .topContent,
+    .topFeatures {
+        min-height: 65px;
+        padding: 12px;
+        text-align: center;
+    }
+
+    #titleHistory,
+    #titleFeatures {
+        font-size: 23px;
+        line-height: 1.3;
+    }
+
+    .bottomContent {
+        padding: 22px;
+    }
+
+    .bottomContent p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    /* Car section: image above text */
+    .nissanCar {
+        flex-direction: column;
+    }
+
+    .nissanLeft,
+    .nissanRight {
+        width: 100%;
+    }
+
+    .nissanLeft {
+        min-height: 280px;
+        height: 280px;
+        background-position: center;
+    }
+
+    .nissanRight {
+        min-height: auto;
+        padding: 30px 22px;
+    }
+
+    #nissanTitle {
+        margin-top: 0;
+        font-size: 23px;
+        line-height: 1.4;
+    }
+
+    #nissanDescription {
+        margin: 20px 0 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    /* Features */
+    .featureCards {
+        padding: 22px 16px;
+        gap: 20px;
+    }
+
+    .featureCard {
+        width: 100%;
+        min-height: auto;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .featureImage {
+        width: 40%;
+        min-height: 130px;
+    }
+
+    .featureImage img {
+        height: 150px;
+    }
+
+    .featureInfo {
+        width: 60%;
+        padding: 0;
+    }
+
+    .featureTitle {
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+
+    .featureDescription {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* Specifications */
+    .specs,
+    .gallery {
+        padding: 45px 18px;
+    }
+
+    .specsTitle,
+    .galleryTitle {
+        margin-bottom: 30px;
+    }
+
+    .specsTitle h1,
+    .galleryTitle h1 {
+        font-size: 30px;
+    }
+
+    .specsTitle p,
+    .galleryTitle p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .specsContent {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .specsImage {
+        width: 100%;
+        min-height: 0;
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+
+    .specsImage img {
+        display: block;
+        object-fit: contain;
+    }
+
+    .specsTable {
+        width: 100%;
+    }
+
+    .specRow {
+        padding: 13px 15px;
+        gap: 12px;
+    }
+
+    .specRow h3,
+    .specRow p {
+        font-size: 13px;
+    }
+
+    .specRow p {
+        text-align: right;
+    }
+
+    /* Performance */
+    .performance {
+        margin-top: 40px;
+    }
+
+    .performance h2 {
+        font-size: 24px;
+    }
+
+    .performanceContainer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .performanceBox {
+        width: 100%;
+        padding: 20px 12px;
+    }
+
+    /* Gallery: two columns on larger phones */
+    .galleryContainer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .galleryCard img {
+        height: 160px;
+    }
+
+    .galleryInfo {
+        padding: 13px;
+    }
+
+    .galleryInfo h3 {
+        font-size: 17px;
+        line-height: 1.4;
+    }
+
+    .galleryInfo p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    /* Footer */
+    .contact {
+        padding: 40px 18px 20px;
+        gap: 30px 15px;
+    }
+
+    .contactColumn {
+        flex: 1 1 calc(50% - 15px);
+        min-width: 0;
+    }
+
+    .contactColumn h3 {
+        font-size: 13px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+
+    .contactColumn a,
+    .contactColumn p {
+        font-size: 12px;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+        margin-bottom: 15px;
+    }
+
+    .contactBottom {
+        margin-top: 10px;
+        padding-top: 20px;
+    }
+
+    .contactBottom p {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+}
+
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
+
+@media screen and (max-width: 400px) {
+
+    .navText a {
+        font-size: 10px;
+        padding: 7px 6px;
+    }
+
+    .leftContent {
+        padding: 20px 16px 30px;
+    }
+
+    #titleHome {
+        font-size: 29px;
+    }
+
+    .featureCard {
+        flex-direction: column;
+    }
+
+    .featureImage,
+    .featureInfo {
+        width: 100%;
+    }
+
+    .featureImage {
+        min-height: 0;
+    }
+
+    .featureImage img {
+        height: 190px;
+    }
+
+    .galleryContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .galleryCard img {
+        height: 220px;
+    }
+
+    .specs,
+    .gallery {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .specRow {
+        padding: 12px 10px;
+    }
+
+    .specRow h3,
+    .specRow p {
+        font-size: 12px;
+    }
+}
+
+
+
